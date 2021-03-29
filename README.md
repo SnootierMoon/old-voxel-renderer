@@ -29,3 +29,9 @@ cmake -Bbuild && cmake --build build
 WASD to move. Space to go up, shift to go down (like Minecraft).
 Escape closes the window.
 Z to toggle the mouse.
+
+## Screenshots
+
+![Alt text](/screenshots/1.png?raw=true)
+![Alt text](/screenshots/2.png?raw=true)
+
