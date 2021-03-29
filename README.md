@@ -8,7 +8,12 @@ Built with OpenGL + Glad + C.
 
 Just GLFW.
 
-## Building
+## Installing and Building
+
+```sh
+git clone https://github.com/SnootierMoon/old-voxel-thing-c.git
+cd old-voxel-thing-c
+```
 
 ```sh
 cmake -Bbuild && cmake --build build
