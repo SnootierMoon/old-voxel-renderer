@@ -26,9 +26,10 @@ cmake -Bbuild && cmake --build build
 
 ## Usage
 
-WASD to move. Space to go up, shift to go down (like Minecraft).
-Escape closes the window.
-Z to toggle the mouse.
+- WASD to move. Space to go up, shift to go down (like Minecraft).
+- Escape closes the window.
+- Z to toggle the mouse.
+- X to toggle wireframe mode.
 
 ## Screenshots
 

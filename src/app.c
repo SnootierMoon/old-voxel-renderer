@@ -19,9 +19,15 @@ stnx_camera camera;
 stnx_voxel_object* object;
 stnx_shader* shader;
 
-int input_mode = 0;
+int input_mode = 0, wired_mode = 0;
 void toggle_input_mode() {
-    glfwSetInputMode(window, GLFW_CURSOR, (input_mode = !input_mode) ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL);
+    input_mode = !input_mode;
+    glfwSetInputMode(window, GLFW_CURSOR, input_mode ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL);
+}
+
+void toggle_wired_mode() {
+    wired_mode = !wired_mode;
+    glPolygonMode(GL_FRONT_AND_BACK, wired_mode ? GL_LINE : GL_FILL);
 }
 
 int main(void) {
@@ -85,8 +91,10 @@ int main(void) {
 void key_callback(GLFWwindow* w, int key, int scancode, int action, int mods) {
     if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
         glfwSetWindowShouldClose(window, 1);
-    } else if (key == GLFW_KEY_Z && action == GLFW_PRESS) {
+    } else if (key == GLFW_KEY_Q && action == GLFW_PRESS) {
         toggle_input_mode();
+    } else if (key == GLFW_KEY_E && action == GLFW_PRESS) {
+        toggle_wired_mode();
     }
 
 }
