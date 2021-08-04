@@ -6,7 +6,7 @@ Built with OpenGL + Glad + C.
 
 ## Dependencies
 
-Just GLFW.
+GLFW, cmake.
 
 ## Installing and Building
 
