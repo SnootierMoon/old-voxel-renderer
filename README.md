@@ -1,6 +1,6 @@
 # Voxel Thing
 
-Me messing around with voxels and OpenGL.
+Project that renders voxels with OpenGL (written in C). I am currently working on a cooler version that uses Vulkan and Rust.
 
 Built with OpenGL + Glad + C.
 
